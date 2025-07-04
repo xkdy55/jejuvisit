@@ -1,0 +1,177 @@
+main{
+    width: 100%; height: 2000px;
+    background-color: #F2EDEA;
+}
+.sec1{
+    width: 100%; height: 1000px;
+    background-color: #F2EDEA;
+    padding: 70px 0;
+    position: relative;
+    margin: 0 auto;
+}
+.sec1>article{
+    display: flex;
+    margin: 200px 0;
+    gap: 30px;
+}
+
+.autumn>.img{
+    width: 515px; height: 595px;
+    background-color: brown;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 40px 25px;
+    background-image: url(./../img/테마지도/가을.jpg);
+    background-size:cover;
+}
+.autumn>.text{
+    width:500px; height: 100px;
+    text-align: center;
+    color: #574747;
+    margin-top: -20px;
+}
+.autumn>.text>h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.autumn>.text>p{
+    font-size: 18px;
+}
+.spring{
+    width: 375px; height: 435px;
+    background-color: blue;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 345px;
+    background-image: url(./../img/테마지도/봄.jpg);
+}
+.pet{
+    width: 375px; height: 435px;
+    background-color: blue;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 345px;
+    background-image: url(./../img/테마지도/미술관.jpg);
+}
+.food{
+    width: 375px; height: 435px;
+    background-color: blue;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 345px;
+    background-image: url(./../img/테마지도/맛집.jfif);
+    background-size:cover;
+}
+.title{
+    width:455px; height: 178px;
+    background-color: #F2EDEA;
+    position: absolute;
+    top: 300px; left: 300px;
+}
+.title>h2{
+    font-size: 34px ;
+    color: #574747;
+    margin-bottom: 50px;
+}
+.title>a{
+    font-size: 18px ;
+    color: #574747;
+}
+.title span{
+    font-weight: bold;
+}
+
+.btn{
+    width:100%; height: 50px;
+    display: flex;
+    padding: 20px;
+    margin: 50px auto;
+    justify-content: center;
+    gap: 20px;
+}
+.btn>div{
+    width: 1000px;
+    border-top: 1px solid gray;
+    margin-top: 13px;
+}
+.btn>p{
+    color: gray;
+    font-size: 18px;
+}
+.btn span{
+    color: #574747;
+    font-weight: bold;
+}
+.btn_left{
+    color: #574747;
+}
+.btn_right{
+    color: #574747;
+}
+
+.sec2{
+    width: 100%; height: 1000px;
+    background-color: #F2EDEA;
+    margin: 100px auto 0 ;
+}
+.sec2>article{
+     width: 1500px; height: 800px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+}
+.map_left{
+    width: 950px; height: 650px;
+    background-image: url(./../img/테마지도/제주도지도.jpg);
+    background-size: cover;
+}
+.map_right{
+    width: 530px; height: 650px;
+}
+.map_right>h1{
+    font-size: 24px;
+    color: #574747;
+    margin: 50px 10px 30px;
+    font-weight: bold;
+}
+.map_right>div{
+    width: 530px; height: 500px;
+}
+.map_right>div>div{
+    width: 530px; height: 120px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+.map_right>div>div>div:first-child{
+    width: 100px; height: 100px;
+}
+.map_img1{
+    background-image: url(./../img/테마지도/카페1.jpg);
+    background-size: cover;
+}
+.map_img2{
+    background-image: url(./../img/테마지도/카페2.jfif);
+    background-size: cover;
+}
+.map_img3{
+    background-image: url(./../img/테마지도/카페3.jfif);
+    background-size: cover;
+}
+.map_img4{
+    background-image: url(./../img/테마지도/카페4.jfif);
+    background-size: cover;
+}
+.map_text{
+    width: 400px; height: 100px;
+    padding-top: 20px;
+}
+.map_text>h2{
+    font-size: 18px;
+    color: #574747;
+}
+.map_text>p{
+    font-size: 12px;
+    color: #574747;
+}
