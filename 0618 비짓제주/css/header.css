@@ -1,0 +1,306 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+   color: #574747;
+}
+
+li {
+   list-style: none;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+/* 1rem = 10px (기본 16px의 62.5%) */
+
+body {
+   font-family: 'Noto Sans KR', sans-serif;
+   line-height: 1.6;
+   color: #574747;
+}
+
+/* 헤더 영역 */
+.desktop-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 20px;
+   background: #f2edef;
+   /*배경색*/
+   /* border-bottom: 1px solid #ddd; 박스구분 */
+}
+
+.logo-box {
+   display: flex;
+   flex-direction: column;
+   /* 세로로 배치 */
+   align-items: center;
+   padding-left: 180px;
+}
+
+.logo a {
+   display: flex;
+}
+
+.logo img {
+   width: 50%;
+   height: 50%;
+   max-height: 30px;
+}
+
+.logo-text h1 {
+   font-size: 2.4rem;
+   font-weight: bold;
+   text-align: center;
+}
+
+.icon-box {
+   display: flex;
+}
+
+.button {
+   display: flex;
+   gap: 10px;
+}
+.button-box{
+   display: flex;
+   gap: 10px;
+}
+.button img {
+   display: block;
+   align-items: center;
+}
+
+.search {
+   display: flex;
+   align-items: center;
+   max-width: 400px;
+   margin: 10px auto;
+   background: #f2edef;
+   /* 배경색 적용 */
+   padding: 5px 5px;
+   /* 내용이 붙지 않도록 패딩 */
+
+}
+
+.search input[type="text"] {
+   flex: 1;
+   padding: 10px 0;
+   border: none;
+   border-bottom: 2px solid #574747;
+   font-size: 1rem;
+   outline: none;
+   background: transparent;
+   /* 부모 배경색이 보이게 투명 처리 */
+   transition: border-color 0.3s ease;
+   /* ease : 부드럽게 시작 → 중간은 빠름 → 끝은 다시 느려짐*/
+}
+
+.search input[type="text"]:focus {
+   border-bottom-color: #ff8400;
+   /* 포커스 시 색상 변경 */
+}
+
+.search .button {
+   padding: 0px 10px;
+   border: none;
+   font-size: 1rem;
+   cursor: pointer;
+}
+
+#toggle {
+   display: none;
+}
+
+.lag {
+   display: none;
+}
+
+/* 네비게이션 영역 */
+nav {
+   background: #f2edef;
+}
+
+.desktop-nav {
+   display: flex;
+   justify-content: center;
+   gap: 80px;
+   margin: 0;
+   padding: 10px 0;
+   border-bottom: 1px solid #ddd;
+   /*박스구분*/
+}
+
+.desktop-nav>li {
+   position: relative;
+}
+
+.desktop-nav>li>a {
+   color: #574747;
+   font-size: 1.4rem;
+   padding: 5px 10px;
+   transition: color 0.3s ease;
+   /* ease : 부드럽게 시작 → 중간은 빠름 → 끝은 다시 느려짐*/
+}
+
+.desktop-nav>li>a:hover {
+   color: #ff8400;
+   /* hover 시 컬러 변경 */
+}
+
+/* === 서브메뉴 === */
+.sub-menu {
+   display: none;
+   /* 기본은 숨김 */
+   position: absolute;
+   top: 100%;
+   /* 부모 메뉴 아래에 붙음 */
+   left: 0;
+   background: #f2edef;
+   padding: 10px 0;
+   min-width: 150px;
+   border: 1px solid #ddd;
+   z-index: 10;
+}
+
+.sub-menu li a {
+   display: block;
+   padding: 8px 20px;
+   text-decoration: none;
+   color: #574747;
+   white-space: nowrap;
+   /* 줄 바꿈 안함*/
+   transition: color 0.3s ease;
+   font-size: 1.2rem;
+}
+
+.sub-menu li a:hover {
+   color: #ff8400;
+}
+
+/* .mobile-header{
+   display: none;
+} */
+/* === 부모 메뉴 hover 시 서브메뉴 노출 === */
+.desktop-nav>li:hover .sub-menu {
+   display: block;
+}
+
+
+/*태블릿&모바일 메뉴를 호버하는것은 불가능함 js로 해야하는듯*/
+.mobile-menu {
+   display: none;
+   background: #f2edef;
+   padding: 20px;
+}
+.search2 {
+   display: flex;
+}
+
+.search2 input[type="text"] {
+   width: 100%;
+   border: none;
+   border-bottom: 2px solid #574747;
+   padding: 10px 0;
+   background: transparent;
+   outline: none;
+}
+
+.search2 input[type="text"]:focus {
+   border-bottom-color: #ff8400;
+}
+
+.search2 .button2 {
+   display: flex;
+   gap: 10px;
+   margin-top: 10px;
+}
+
+.search2 .button2 img {
+   width: 20px;
+   height: 20px;
+}
+
+.mobile-nav {
+   padding: 20px 0;
+}
+
+.mobile-nav li {
+   margin-bottom: 10px;
+}
+
+.mobile-nav li ul {
+   padding-left: 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+   .language {
+       display: none;
+   }
+
+   .logo-box {
+       padding: 0;
+   }
+
+   .logo a {
+       justify-content: center;
+   }
+
+   .lag {
+       display: block;
+   }
+
+   #toggle {
+       display: block;
+   }
+
+   .search input[type="text"] {
+       display: none;
+   }
+
+   .i-sch {
+       display: none;
+   }
+
+   .i-mpag {
+       display: none;
+   }
+
+   .i-sch2 {
+       display: block;
+   }
+
+   .i-mpag2 {
+       display: block;
+   }
+
+   .desktop-nav {
+       display: none;
+   }
+   
+   /* .mobile-menu{
+       display: block;
+   } */
+  
+   .desktop-nav {
+       display: none;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .logo img {
+       max-height: 30px;
+   }
+
+   .logo-text h1 {
+       font-size: 1.4rem;
+   }
+}

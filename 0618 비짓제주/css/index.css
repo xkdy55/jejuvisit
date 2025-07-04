@@ -1,0 +1,109 @@
+
+
+.sec5{
+    width: 100%; 
+    background-color: #F2EDEA;
+    margin: 0 auto;
+}
+.sec5>article h1{
+    font-size: 24px;
+    color: #574747;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sec5>article>div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    padding: 0 20px 20px;
+    gap: 20px;
+}
+.sec5>article>div>div{
+    width:66vh ; height: 633px;
+    background-color: yellow;
+    background-repeat: no-repeat;
+}
+.img1{
+    background-image: url(./../img/index/봄.jpg);
+    background-size: cover;
+    filter: brightness(50%)
+}
+.img2{
+    background-image: url(./../img/index/가을.jpg);
+     background-size: cover;
+     filter: brightness(50%)
+}
+.img3{
+    background-image: url(./../img/index/수영장.jfif);
+     background-size: cover;
+     filter: brightness(50%)
+}
+.img4{
+    background-image: url(./../img/index/맛집.jfif);
+     background-size: cover;
+     filter: brightness(50%)
+}
+.img5{
+    background-image: url(./../img/index/서핑.jpg);
+     background-size: cover;
+     filter: brightness(50%)
+}
+.img6{
+    background-image: url(./../img/index/착한가격.jpg);
+     background-size: cover;
+     filter: brightness(50%)
+}
+.img7{
+    background-image: url(./../img/index/미술관.jpg);
+     background-size: cover;
+     filter: brightness(50%)
+}
+.img8{
+    background-image: url(./../img/index/전복.png);
+     background-size: cover;
+     filter: brightness(50%)
+}
+.sec5>article>div>div>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 315px;
+}
+.img:hover{
+    background-size: 200%;
+    filter: brightness(100%)
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .img3{
+        display: none;
+    }
+    .img4{
+        display: none;
+    }
+    .img5{
+        display: none;
+    }
+    .img6{
+        display: none;
+    }
+    .img7{
+        display: none;
+    }
+    .img8{
+        display: none;
+    }
+    .sec5>article>div>div{
+        width: 53vh;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    .img{
+        margin-left: 50px;
+    }
+}
